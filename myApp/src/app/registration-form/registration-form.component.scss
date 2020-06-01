@@ -1,0 +1,36 @@
+.invalidfeedback{
+    color: #FF0000;
+  }
+  .admin_imgStyle{
+    width: 80%;
+    height: 150px;
+    border: 2px solid rgb(240, 237, 237);
+    text-align: right;
+}
+.number{
+  float: right;
+  width: 72%;
+}
+.code{
+  width: 25%;
+  float: left;
+}
+input[type="file"]{
+  visibility: hidden;
+}
+.image-preview {
+  height: 50px;
+  margin: 1px;
+}
+.image-preview img {
+  height: 100%;
+}
+.radioBtn{
+  margin-right: 5%;
+}
+h1{
+  color: blueviolet;
+}
+.btnReset{
+  margin-right: 5%;
+}

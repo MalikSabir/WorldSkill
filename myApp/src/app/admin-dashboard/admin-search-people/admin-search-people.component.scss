@@ -1,0 +1,40 @@
+.btn_search{
+    background-color: #23b83c;
+	border: 1px solid #020353;
+	color: whitesmoke;
+	padding: 3px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 1em;
+	display: inline-block;
+	width: 15%;
+	border-radius: 5px;
+    box-shadow: 3px 3px 8px 0 #000;
+    margin-top: 3px;
+}
+.btn_search:hover{
+    font-weight: bold;
+}
+.text_search{
+    width: 30%;
+    border: 1px solid black;
+}
+.search_div{
+    background-color: white;
+}
+.imgStyle{
+	width: 90%;
+    height: 130px;
+    border: 2px solid rgb(240, 237, 237);
+	text-align: center;
+	margin: 5px;
+}
+.checked{
+    color: orange;
+}
+.btnMargin{
+	margin: 5px;
+}
+h4{
+	margin: 5px;
+}

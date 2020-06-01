@@ -1,0 +1,24 @@
+<div class="container-fluied">  
+    <br><br><br><div class="row">
+        <div class="col-sm-12 col-md-12 border">
+            <h1>Update Skill Data</h1>
+        </div>
+
+        <div class="col-sm-5 col-md-5 border">
+            <label>Select Skill</label><br>
+            <select class="form-Control">
+                <option *ngFor="let count of skillInformation" value="{{count.skillName}}"> {{count.skillName}} </option>
+            </select>
+            <button class="btn btn-primary btnMargin">Update</button>
+            <button class="btn btn-danger btnMargin">Delete</button>
+        </div>
+        <div class="col-sm-7 col-md-7 border form-group">
+            <label>Enter New Skill</label><br>
+            <form [formGroup]="newSkillForm" (submit)="addNewSkill()">
+                    <input type="text" class="form-Control" formControlName="newSkill">
+                    <input type="submit" value="Save" class="btn btn-success btnSave">
+            </form>
+        </div>
+    </div>
+
+</div>

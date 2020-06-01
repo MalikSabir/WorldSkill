@@ -1,0 +1,29 @@
+<div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12 col-md-12">
+                <nav class="navbar navbar-expand-sm header fixed-top">
+                    <div class="col-sm-2 col-md-2">
+                        <img src="assets/logo.png" alt="#" class="img-fluid logoStyle">
+                    </div> 
+                    <div class="col-sm-1 col-md-2"></div>
+                    <div class="col-sm-9 col-md-8">
+                            <ul class="nav navbar-nav">
+                                <li *ngIf="accountType === 0" class="border border-white border-top-0 list_itemStyle homeitemStyle"><a (click)="onSelect('admin-home')" class="nav-link text-white">Home</a></li>
+                                <li *ngIf="accountType !== 0" class="border border-white border-top-0 list_itemStyle homeitemStyle"><a (click)="onSelect('view-profile')" class="nav-link text-white">View Profile</a></li>
+                                <li class="border border-white border-top-0 list_itemStyle"><a (click)="onSelect('admin-view-inbox')" class="nav-link text-white">View Inbox</a></li>
+                                <li *ngIf="accountType === 0" class="border border-white border-top-0 list_itemStyle"><a (click)="onSelect('view-feedback')" class="nav-link text-white">View Feedback</a></li>
+                                <li *ngIf="accountType === 0" class="border border-white border-top-0 list_itemStyle"><a (click)="onSelect('update-skill-type')" class="nav-link text-white">Update Skill Type</a></li>
+                                <li *ngIf="accountType === 0" class="border border-white border-top-0 list_itemStyle"><a (click)="onSelect('check-report')" class="nav-link text-white">Check Reports</a></li>
+                                <li class="border border-white border-top-0 list_itemStyle"><a (click)="onSelect('admin-search-people')" class="nav-link text-white">Search People</a></li>
+                                <li *ngIf="accountType === 2" class="border border-white border-top-0 list_itemStyle"><a (click)="onSelect('jobs-status')" class="nav-link text-white">Jobs Status</a></li>
+                                <li *ngIf="accountType !== 0" class="border border-white border-top-0 list_itemStyle"><a (click)="onSelect('work-status')" class="nav-link text-white">Work Status</a></li>
+                                <li *ngIf="accountType === 1" class="border border-white border-top-0 list_itemStyle"><a (click)="onSelect('jobs-news')" class="nav-link text-white">Jobs News</a></li>
+                            </ul>
+                    </div>
+                    <div class="div_header" >
+                        <button class="signin_margin btn btn-outline-warning" (click)="onLogOut()">Sign Out</button>
+                    </div>
+                </nav>
+            </div>
+        </div>
+</div>

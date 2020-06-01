@@ -1,0 +1,53 @@
+.btn_search{
+    background-color: #23b83c;
+	border: 1px solid #020353;
+	color: whitesmoke;
+	padding: 3px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 1em;
+	display: inline-block;
+	width: 15%;
+	border-radius: 5px;
+    box-shadow: 3px 3px 8px 0 #000;
+    margin-top: 3px;
+}
+.btn_search:hover{
+    font-weight: bold;
+}
+.text_search{
+    width: 30%;
+    border: 1px solid black;
+}
+.search_div{
+    background-color: white;
+}
+
+.spacing{
+	margin-left: 15px;
+}
+.flex-container{
+	display: flex;
+	flex-direction: row;
+}
+.display_div{
+	display: clear;
+}
+.addRecord{
+	height: 35px;
+	margin-top: 28px;
+	margin-left: 5px;
+}
+h1{
+	text-align: center;
+	color: blueviolet;
+}
+label{
+	font-weight: bold;;
+}
+.btnSave{
+	margin-left: 10px;
+}
+.btnMargin{
+	margin: 10px;
+}

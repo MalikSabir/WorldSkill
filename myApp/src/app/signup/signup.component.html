@@ -1,0 +1,29 @@
+<div class="wrapper" >
+    <div class="container">
+       <h1>Signup</h1>
+      <form [formGroup] = "signup" (ngSubmit) = "onsubmit()">
+        <div class="group">
+            <!--Email code-->
+          <label for="email">Email:</label>
+          <input type = "email" formControlName="email" id="email" name="email">
+          <div  class="invalidfeedback" *ngIf="submitted && signup.controls.email.errors" >
+            <div *ngIf="signup.controls.email.errors.required || signup.controls.email.errors.email">Email must be required</div>
+        </div>
+        <!--for Passwrod-->
+          <label for="password">Password:</label>
+          <input type="password" formControlName = "password"  name="password" >
+          <div  class="invalidfeedback" *ngIf="submitted && signup.controls.password.errors">
+         
+            <div *ngIf="signup.controls.password.errors.required || signup.controls.password.errors.password">password must be required</div>
+            <div *ngIf="signup.get('password').hasError('minlength')">
+              Password must be 8 characters.
+            </div>
+          </div>
+        </div>
+       <br>
+        <input type="submit" value="Submit" class="btn">
+       <div class = "sucessmessage">{{sucessmessage}}</div> 
+      </form>
+    </div>
+  </div>
+ 

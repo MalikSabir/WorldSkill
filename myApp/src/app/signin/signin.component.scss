@@ -1,0 +1,96 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+  }
+  .wrapper{
+    min-height:10vh;
+    background-color:rgba(255, 255, 255, 0.4);
+    font-family: 'Open Sans', sans-serif;
+    padding-top:40px;
+  }
+  .container{
+    max-width:400px;
+    margin:0 auto;
+    background-color:white;
+    text-align:center;
+    padding:50px 0;
+    box-shadow:0 0 20px rgba(0,0,0,.4);
+    border-radius:3px;
+    position: absolute;
+    top:20%;
+    left:40%;
+    width: 30%;
+    height: 70%;
+
+  }
+  .container h1{
+    position: absolute;
+    top: 6%;
+    left:30%;
+
+  }
+  
+ 
+  form{
+    max-width:250px;
+    margin:0 auto;
+    text-align:left;
+    position: absolute;
+    left: 10%;
+    top: 20%;
+  }
+  
+ 
+  div.group{
+    margin-top:15px;
+  }
+  label{
+    display:block;
+    margin-bottom:5px;
+    padding: 5px;
+    
+  }
+  div.group input{
+    width:150%;
+    padding:10px 4px;
+    outline:none;
+  }
+  a.forget-link{
+    color:black;
+    display:block;
+    margin:10px 0;
+  }
+  
+  input[type="submit"]{
+    padding:15px 35px;
+    outline:none;
+    border:None;
+    background-color:#20c198;
+    color:white;
+    transition:all .3s ease-in-out;
+  }
+  input[type="submit"]:hover{
+    cursor:pointer;
+    box-shadow:0 10px 15px -5px rgba(0,0,0,0.4);
+  }
+
+  .invalidfeedback{
+    color: #FF0000;
+    
+  }
+
+  .sucessmessage{
+    color: green;
+  }
+  @media (max-width: 800px) {
+    .form-inline input {
+      margin: 10px 0;
+    }
+  
+    .form-inline {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  }
+

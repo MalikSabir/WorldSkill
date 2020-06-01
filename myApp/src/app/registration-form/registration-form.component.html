@@ -1,0 +1,77 @@
+
+<br><br><br><br><br>
+<div class="container-fluid">
+<div class="row">
+  <app-form-header></app-form-header>
+    <div class="col-sm-2 col-md-2"></div>
+    <div class="col-sm-8 col-md-8">
+<form [formGroup]="registration" (submit)="rgisterForm()">
+    <div class="form-row">
+
+      <div class="form-group col-md-3">
+        <div class="col text-left" (click)="filePicker.click()">
+          <img [src]="imagePreview" class="rounded image admin_imgStyle">
+          <input type="file" #filePicker (change)="onImagePicked($event)">
+      </div>
+      </div>
+      <div class="com-md-8">
+        <h1>Registration Form</h1>
+      </div>
+
+      <div class="form-group col-md-6">
+        <label for="inputFirstName">First Name</label>
+        <input type="text" formControlName="firstName" class="form-control" placeholder="First Name">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="inputLastName">Last Name</label>
+        <input type="text" formControlName="lastName" class="form-control" placeholder="Last Name">
+      </div>
+    </div>
+   <div class="form-row">
+    <div class="form-group col-md-6">
+        <label for="inputAddress">Contact</label><br>
+        <div class="code">
+          <select class="form-control" formControlName="code">
+            <option *ngFor="let count of countryes" value="{{count.code}}"> {{count.code}} </option>
+         </select>
+        </div>
+        <div class="number">
+          <input type="number" formControlName="number" class="form-control" placeholder="xxxxxxxxxxx">
+        </div>
+    </div>
+    <div class="form-group col-md-6">
+            <label for="inputAddress">Date of Birth</label>
+            <input type="date" formControlName="dob" class="form-control" placeholder="xxxxxxxxxxx">
+    </div>
+    </div>
+    <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputAddress">Address</label>
+      <input type="text" formControlName="addressOne" class="form-control" placeholder="1234 Main St">
+    </div>
+    <div class="form-group col-md-6">
+      <label>Gender</label><br>
+      <label class="radioBtn">Male</label><input class="radioBtn" name="gender" value="Male" type="radio" formControlName="gender">
+      <label class="radioBtn">Female</label><input class="radioBtn" name="gender" value="Female" type="radio" formControlName="gender">
+    </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputCity">City</label>
+        <input type="text" formControlName="city" class="form-control">
+      </div>
+     
+      <div class="form-group col-md-3">
+         <label for="inputZip">Country</label>
+         <select class="form-control" formControlName="country">
+          <option *ngFor="let count of countryes" value="{{count.name}}"> {{count.name}} </option>
+        </select>
+       </div>
+    </div>
+     
+     <button type="submit" class="btn btn-primary btnReset">Next</button>
+     <input type="reset" value="Clear" class="btnReset btn btn-danger" (click)="clearData()"><br><br><br>
+  </form>
+</div>
+</div>
+</div>

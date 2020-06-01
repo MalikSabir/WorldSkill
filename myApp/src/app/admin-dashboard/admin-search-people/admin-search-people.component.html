@@ -1,0 +1,39 @@
+
+
+<div class="container-fluid">      
+    <div class="row">
+            <form [formGroup]="searchPeople" (ngSubmit)="onSearchPeople()">
+                <div class="col-sm-7 col-md-7 text-center position-fixed search_div"><br>
+                    <input type="text" class="text_search" formControlName="search"><br>
+                    <input type="submit" value="Search" class="btn_search">
+                </div>
+            </form>
+    </div><br><br><br><br>
+<form action="" *ngFor="let s of Searched">
+    <div class="row btnMargin border">
+        <div class="col-sm-3 col-md-3">
+            <img src="{{s.imgUrl}}" alt="#" class="rounded image imgStyle">  
+        </div>
+        <div class="col-sm-3 col-md-3">
+            <h4>{{s.firstName}} {{s.lastName}}</h4>
+            <h4>Rating:             
+                <span *ngIf="s.rating >= '1'; else starEmpty" class="fa fa-star checked"></span>
+                <span *ngIf="s.rating >= '2'; else starEmpty" class="fa fa-star checked"></span>
+                <span *ngIf="s.rating >= '3'; else starEmpty" class="fa fa-star checked"></span>
+                <span *ngIf="s.rating >= '4'; else starEmpty" class="fa fa-star checked"></span> 
+                <span *ngIf="s.rating >= '5'; else starEmpty" class="fa fa-star checked"></span> 
+                <ng-template #starEmpty>
+                    <span class="fa fa-star"></span>
+                </ng-template></h4><h4>User ID: {{s.Accounts_fk}}</h4>
+        </div>
+        <div class="col-sm-3 col-md-3">
+            <h4>City: {{s.city}}</h4><br><h4>Country: {{s.country}}</h4>
+        </div>
+        <div class="col-sm-3 col-md-3">
+            <button class="btn btn-success btnMargin">Friend Request</button><br>
+            <button class="btn btn-danger btnMargin">View Profile</button><br>
+            <button class="btn btn-primary btnMargin">Messsage</button>
+        </div>
+    </div>
+</form>
+</div>

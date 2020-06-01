@@ -1,0 +1,52 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-12 col-md-12">
+            
+            <nav class="navbar navbar-expand-sm header fixed-top">
+                <div class="col-sm-2 col-md-2">
+                        <img src="assets/logo.png" alt="#" class="img-fluid logoStyle">
+                </div> 
+            </nav>
+        </div><br><br>
+        <div class="col-sm-12 col-md-12">
+            <img src="assets/dashboardSkyblue.jpg" alt="#" class="image"><br>
+            <div class="col-md-4 sign_in">
+                <form [formGroup] = "signin" (ngSubmit) = "onsubmit()" >
+                    <div class="group">
+                      <label for="email"><b>Email:</b></label>
+                      <input type="email" formControlName="email"  name="email" class="width">
+                      <div  class="invalidfeedback" *ngIf="submitted && signin.controls.email.errors" >
+                        <div *ngIf="signin.controls.email.errors.required || signin.controls.email.errors.email">Email must be required</div>
+                    </div>
+                     <br>
+                      <label for="password"><b>Password:</b></label>
+                      <input  type="password"  formControlName = "password"  name="password" class="width" >
+                      <div  class="invalidfeedback" *ngIf="submitted && signin.controls.password.errors">
+                       
+                        <div *ngIf="signin.controls.password.errors.required || signin.controls.password.errors.password">password must be required</div>
+                    </div>
+                    <a (click)="forgetPassword()" class="forget-link">Forgot password?</a>
+                    <br>
+                    <input type="submit"  (click)="signInVlue('SignIn')" value="Login" id="submit"><br><br>
+                    <input type="submit"  (click)="signUpVlue('SignUp')" value="SignUp" id="submit">
+                    <h6 style="color: red">{{passerror}}</h6>
+                    <div class = "sucessmessage">{{sucessmessage}}</div>  
+                  </div>
+                </form><br><br>
+            </div>
+        </div>
+        <div class="col-sm-1">
+        </div>
+        <div class="col-sm-3 col-md-3 div_style">
+            <h1>Here is div one</h1>
+        </div>
+        <div class="col-sm-3 col-md-3 div_style">
+                <h1>Here is div two</h1>
+        </div>
+        <div class="col-sm-3 col-md-3 div_style">
+            <h1>Here is div three</h1>
+        </div>
+    </div>
+</div>
+
+

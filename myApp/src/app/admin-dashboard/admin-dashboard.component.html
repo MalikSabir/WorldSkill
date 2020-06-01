@@ -1,0 +1,50 @@
+<app-admin-header (featureSelected)="onNavigate($event)"></app-admin-header>
+<br><br><br>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-3 col-md-3  position-fixed"><br><br>
+            <div *ngFor="let p of post">
+            <h1>{{p.accountType}}</h1>
+            <div class="col text-center">
+                <img src="{{p.imgUrl}}" alt="#" class="rounded-circle image admin_imgStyle">
+            </div><hr>
+                <!-- the firstName, LastName its of the database column name -->
+            <!-- <strong>{{ p.firstName }} {{ p.lastName}} <span class="text-success">*</span></strong> -->
+            <h4>{{ p.firstName }} {{ p.lastName}} <span class="text-success">*</span></h4>
+            <div>
+                <img src="{{country}}" alt="#" class="rounded image flagStyle">
+                <h5>{{p.country}}</h5>
+            </div><br><br>
+                <h5><b>Contact Number:</b> {{p.code}}-{{p.contact}}</h5>
+                <h5><b>Date of Birth:</b> {{p.dob}}</h5>
+                <h5><b>Gender:</b> {{p.gender}}</h5>
+                <h5><b>Rating:</b>
+                    <span *ngIf="p.rating >= '1'; else starEmpty" class="fa fa-star checked"></span>
+                    <span *ngIf="p.rating >= '2'; else starEmpty" class="fa fa-star checked"></span>
+                    <span *ngIf="p.rating >= '3'; else starEmpty" class="fa fa-star checked"></span>
+                    <span *ngIf="p.rating >= '4'; else starEmpty" class="fa fa-star checked"></span> 
+                    <span *ngIf="p.rating >= '5'; else starEmpty" class="fa fa-star checked"></span> 
+                    <ng-template #starEmpty>
+                        <span class="fa fa-star"></span>
+                    </ng-template>
+                </h5>
+                <h5><b>City:</b> {{p.city}}</h5>
+                <button class="btn btn-primary">Edit Profile</button>
+            </div>
+        </div>
+        <div class="col-sm-3 col-md-3">
+        </div>
+        <div class="col-sm-9 col-md-9 border">
+            <app-admin-home *ngIf="loadedFeature === 'admin-home'"></app-admin-home>
+            <app-admin-view-inbox *ngIf="loadedFeature === 'admin-view-inbox'"></app-admin-view-inbox>
+            <app-view-feedback *ngIf="loadedFeature === 'view-feedback'"></app-view-feedback>
+            <app-update-skill-type *ngIf="loadedFeature === 'update-skill-type'"></app-update-skill-type>
+            <app-check-reports *ngIf="loadedFeature === 'check-report'"></app-check-reports>
+            <app-admin-search-people *ngIf="loadedFeature === 'admin-search-people'"></app-admin-search-people>
+            <app-jobs-news *ngIf="loadedFeature === 'jobs-news'"></app-jobs-news>
+            <app-work-status *ngIf="loadedFeature === 'work-status'" ></app-work-status>
+            <app-jobs-status *ngIf="loadedFeature === 'jobs-status'"></app-jobs-status>
+            <app-view-profile *ngIf="loadedFeature === 'view-profile'"></app-view-profile>
+        </div>
+    </div>
+</div>        

@@ -1,0 +1,110 @@
+.header{
+    background: #3B71F8;
+}
+.middel_div{
+    border: 2px solid black;
+    float: right;
+    margin-left: 50px;
+}
+  .image{
+      position: absolute;
+      width: 99%;
+      height: 700px;
+  }
+  .signin_margin{
+    margin-left: 3px;
+  }
+  .div_style{
+      border: 2px solid blue;
+      height: 100px;
+      margin-top: 650px;
+      margin-left: 10px;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      margin-right: 10px;
+  }
+  .logoStyle{
+      position: relative;  
+      width: 100%;
+      height: 70px;
+  }
+  .sign_in{
+    float: right;
+    height: 500px;
+    border: 2px rgb(116, 116, 252);
+    opacity: 0.99;
+    border-radius: 3rem;
+    margin-right: 5%;
+    margin-top: 50px;
+    background-color: rgb(233, 225, 248);
+  }
+
+
+  ////////////// sign in css ////////////
+  
+  .container{
+    max-width:400px;
+    margin:0 auto;
+    background-color:white;
+    text-align:center;
+    padding:50px 0;
+    box-shadow:0 0 20px rgba(0,0,0,.4);
+    border-radius:3px;
+
+  }
+ 
+  form{
+    margin:0 auto;
+    position: absolute;
+    left: 10%;
+    top: 10%;
+  }
+  
+  label{
+    display:block;
+    margin-bottom:5px;
+    padding: 5px;
+    
+  }
+  div.group input{
+    width:190%;
+    padding:10px 4px;
+    outline:none;
+  }
+  a.forget-link{
+    color:black;
+    display:block;
+    margin:10px 0;
+  }
+  
+  input[type="submit"]{
+    padding:15px 35px;
+    outline:none;
+    border:None;
+    background-color:#86f8a3;
+    color:white;
+    transition:all .3s ease-in-out;
+  }
+  input[type="submit"]:hover{
+    cursor:pointer;
+    box-shadow:0 10px 15px -5px rgba(0,0,0,0.4);
+  }
+
+  .invalidfeedback{
+    color: #FF0000;
+    
+  }
+
+  .sucessmessage{
+    color: green;
+  }
+  @media (max-width: 800px) {
+    .form-inline input {
+      margin: 10px 0;
+    }
+  
+    .form-inline {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  }
