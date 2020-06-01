@@ -7,6 +7,8 @@ and i used the bootstrap V4,scss for there styling.
 
 #Registration Form
 
+![Registration Form](https://user-images.githubusercontent.com/66254986/83444366-b8109200-a464-11ea-8d2a-c2a7e7ada7b5.PNG)
+
 #Skill Form
 
 #Search People
