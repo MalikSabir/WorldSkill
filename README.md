@@ -23,8 +23,10 @@ and i used the bootstrap V4,scss for there styling.
 
 ![AdminDashboard](https://user-images.githubusercontent.com/66254986/83444829-64527880-a465-11ea-9c70-f242d275c182.PNG)
 
+#Update Skills
+
 #Forget Password
 
-#Update Skills
+![ForgetPassword](https://user-images.githubusercontent.com/66254986/83444981-a380c980-a465-11ea-8dfd-2b212a3484c9.PNG)
 
 #Database Structure
