@@ -13,10 +13,11 @@ and i used the bootstrap V4,scss for there styling.
 
 #Skill Form
 
+![Skills Form](https://user-images.githubusercontent.com/66254986/83444684-2d7c6280-a465-11ea-93b1-406141b753bb.PNG)
+
 #Search People
 
 ![SearchPeople](https://user-images.githubusercontent.com/66254986/83443266-e7260400-a462-11ea-962f-a4fedef791bc.PNG)
-
 
 #Admin Dashboard/User Dashboard
 
