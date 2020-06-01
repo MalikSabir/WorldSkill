@@ -21,6 +21,8 @@ and i used the bootstrap V4,scss for there styling.
 
 #Admin Dashboard/User Dashboard
 
+![AdminDashboard](https://user-images.githubusercontent.com/66254986/83444829-64527880-a465-11ea-9c70-f242d275c182.PNG)
+
 #Forget Password
 
 #Update Skills
