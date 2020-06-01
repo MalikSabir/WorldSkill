@@ -33,4 +33,6 @@ and i used the bootstrap V4,scss for there styling.
 
 #Database Structure
 
+![Database](https://user-images.githubusercontent.com/66254986/83445301-299d1000-a466-11ea-9423-bd912ca5ef11.PNG)
+
 
