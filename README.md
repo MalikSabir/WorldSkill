@@ -25,8 +25,12 @@ and i used the bootstrap V4,scss for there styling.
 
 #Update Skills
 
+![UpdateSkills](https://user-images.githubusercontent.com/66254986/83445108-d4f99500-a465-11ea-9035-ecbf1d09f3d4.PNG)
+
 #Forget Password
 
 ![ForgetPassword](https://user-images.githubusercontent.com/66254986/83444981-a380c980-a465-11ea-8dfd-2b212a3484c9.PNG)
 
 #Database Structure
+
+
