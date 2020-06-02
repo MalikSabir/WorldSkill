@@ -1,7 +1,7 @@
 # WorldSkill
-The repositry of my project of world skills which is web application and developed in angular js V8 and Node js.
+The repositry of our project of world skills which is web application and developed in angular js V8 and Node js.
 The all pages of website working very well whic are given below with description and that are connected with database
-and i used the bootstrap V4,scss for there styling.
+and We used the bootstrap V4,scss for there styling.
 
 #Dashboard/SignIn/SignUp
 
