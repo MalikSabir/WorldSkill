@@ -5,7 +5,7 @@ and i used the bootstrap V4,scss for there styling.
 
 #Dashboard/SignIn/SignUp
 
-https://github.com/MalikSabir/WorldSkill/blob/master/myApp/src/app/dashboard/dashboard.component.html
+[https://github.com/MalikSabir/WorldSkill/blob/master/myApp/src/app/dashboard/dashboard.component.html](url)
 
 ![Dashboard](https://user-images.githubusercontent.com/66254986/83444526-f8701000-a464-11ea-97d9-35490a98b13a.PNG)
 
