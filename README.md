@@ -8,7 +8,7 @@ and We used the bootstrap V4,scss for there styling.
 The Dashboard is the starting page of our application where you can SignIn and SingnUp to your account.
 Here you can see the HTML code of Dashboard by this link: [https://github.com/MalikSabir/WorldSkill/blob/master/myApp/src/app/dashboard/dashboard.component.html](url)
 
-Here you can see the SCSS(style sheet) code of Dashboard by this link:
+Here you can see the SCSS(Style Sheet) code of Dashboard by this link:
 [https://github.com/MalikSabir/WorldSkill/blob/master/myApp/src/app/dashboard/dashboard.component.scss](url)
 
 Here you can see the Type Script file code of Dashboard by this link:
@@ -18,16 +18,28 @@ Here you can see the Type Script file code of Dashboard by this link:
 
 #Registration Form
 
+The Registration Form is the page of our application when user successfully SignUp after that the basic information will taken by user.
+Here you can see the HTML code of Registration Form by this link:
 [https://github.com/MalikSabir/WorldSkill/blob/master/myApp/src/app/registration-form/registration-form.component.html](url)
+
+Here you can see the SCSS(Style Sheet) code of Registration Form by this link:
 [https://github.com/MalikSabir/WorldSkill/blob/master/myApp/src/app/registration-form/registration-form.component.scss](url)
+
+Here you can see the Type Script file code of Registration Form by this link:
 https://github.com/MalikSabir/WorldSkill/blob/master/myApp/src/app/registration-form/registration-form.component.ts
 
 ![Registration Form](https://user-images.githubusercontent.com/66254986/83444366-b8109200-a464-11ea-8d2a-c2a7e7ada7b5.PNG)
 
 #Skill Form
 
+The Skill is the page of our application when user successfully Register the basic information after that the skills information will taken by the user. 
+Here you can see the HTML code of Skill Form by this link:
 [https://github.com/MalikSabir/WorldSkill/blob/master/myApp/src/app/registration-form/skills-form/skills-form.component.html](url)
+
+Here you can see the SCSS(Style Sheet) code of Skill Form by this link:
 [https://github.com/MalikSabir/WorldSkill/blob/master/myApp/src/app/registration-form/skills-form/skills-form.component.scss](url)
+
+Here you can see the Type Script File code of Skill Form by this link:
 [https://github.com/MalikSabir/WorldSkill/blob/master/myApp/src/app/registration-form/skills-form/skills-form.component.ts](url)
 
 ![Skills Form](https://user-images.githubusercontent.com/66254986/83444684-2d7c6280-a465-11ea-93b1-406141b753bb.PNG)
