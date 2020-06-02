@@ -5,8 +5,13 @@ and We used the bootstrap V4,scss for there styling.
 
 #Dashboard/SignIn/SignUp
 
-[https://github.com/MalikSabir/WorldSkill/blob/master/myApp/src/app/dashboard/dashboard.component.html](url)
+The Dashboard is the starting page of our application where you can SignIn and SingnUp to your account.
+Here you can see the HTML code of Dashboard by this link: [https://github.com/MalikSabir/WorldSkill/blob/master/myApp/src/app/dashboard/dashboard.component.html](url)
+
+Here you can see the SCSS(style sheet) code of Dashboard by this link:
 [https://github.com/MalikSabir/WorldSkill/blob/master/myApp/src/app/dashboard/dashboard.component.scss](url)
+
+Here you can see the Type Script file code of Dashboard by this link:
 [https://github.com/MalikSabir/WorldSkill/blob/master/myApp/src/app/dashboard/dashboard.component.ts](url)
 
 ![Dashboard](https://user-images.githubusercontent.com/66254986/83444526-f8701000-a464-11ea-97d9-35490a98b13a.PNG)
